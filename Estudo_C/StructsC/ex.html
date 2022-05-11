@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=" exibirNumber()">Clickar</button>
+    <div id="resultado"></div>
+</body>
+</html>
+<script>
+    function exibirNumber(){
+        var contador = 1
+        alert(1)
+        while(contador < 100){
+            if(contador % 3 != 0 && contador %5 !=0){
+            resultado.innerHTML += `${contador}<br>`
+            }
+            else if(contador %3 == 0 && contador %5==0)
+            {
+                resultado.innerHTML+= `Deu Bom <br>`
+            }
+            else{
+                resultado.innerHTML+= contador%3 ==0?"Deu<br>":""
+                resultado.innerHTML+= contador%5 ==0?"Bom<br>":""
+            }
+            contador++
+        }
+    }
+
+</script>
